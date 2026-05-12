@@ -1,5 +1,10 @@
 💇‍♀️ Sistema de Gestão Cabeleireira Leila
 
+
+<img width="1920" height="1080" alt="Captura de tela 2026-05-11 235153" src="https://github.com/user-attachments/assets/a9885023-0d13-4c39-8012-796ce6ced271" />
+<img width="1920" height="1080" alt="Captura de tela 2026-05-11 235209" src="https://github.com/user-attachments/assets/78f1bbb8-f18d-4468-bf96-72b9248b787b" />
+
+
 📝 Sobre o Projeto
 
 Este sistema foi desenvolvido para modernizar a gestão de agendamentos do salão Leila Hair. Ele permite o controle total de horários, serviços prestados e oferece uma visão gerencial do faturamento, substituindo processos manuais por uma interface digital elegante e intuitiva, solução do desafio proposto para empresa DSIN Tecnologia da Informação. 
