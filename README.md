@@ -1,8 +1,11 @@
 💇‍♀️ Sistema de Gestão Cabeleireira Leila
+
 📝 Sobre o Projeto
+
 Este sistema foi desenvolvido para modernizar a gestão de agendamentos do salão Leila Hair. Ele permite o controle total de horários, serviços prestados e oferece uma visão gerencial do faturamento, substituindo processos manuais por uma interface digital elegante e intuitiva.
 
 🚀 Funcionalidades Principais
+
 Gestão de Agendamentos: Cadastro, edição, visualização e exclusão de horários.
 
 Painel Gerencial (Dashboard): Visualização em tempo real do faturamento confirmado e total de serviços realizados.
