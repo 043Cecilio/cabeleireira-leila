@@ -2,7 +2,7 @@
 
 📝 Sobre o Projeto
 
-Este sistema foi desenvolvido para modernizar a gestão de agendamentos do salão Leila Hair. Ele permite o controle total de horários, serviços prestados e oferece uma visão gerencial do faturamento, substituindo processos manuais por uma interface digital elegante e intuitiva.
+Este sistema foi desenvolvido para modernizar a gestão de agendamentos do salão Leila Hair. Ele permite o controle total de horários, serviços prestados e oferece uma visão gerencial do faturamento, substituindo processos manuais por uma interface digital elegante e intuitiva, solução do desafio proposto para empresa DSIN Tecnologia da Informação. 
 
 🚀 Funcionalidades Principais
 
