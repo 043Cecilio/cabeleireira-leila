@@ -30,7 +30,7 @@ Frontend: HTML5, CSS3 (Custom Design), JavaScript e Bootstrap 5.
 
 Ícones: Font Awesome 6.
 
-Banco de Dados: SQLite (em desenvolvimento).
+Banco de Dados: SQLite.
 
 Versionamento: Git e GitHub.
 
