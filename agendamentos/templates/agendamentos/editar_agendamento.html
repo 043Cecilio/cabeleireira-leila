@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Agendamento - Leila Hair</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="form-card">
+            <div class="form-header" style="background-color: #5d3712; padding: 40px; color: white; text-align: center;">
+                <h2 class="fw-bold mb-1">Alterar Agendamento</h2>
+                <p class="small mb-0 opacity-75">Editando horário de {{ agendamento.cliente_nome }}</p>
+            </div>
+
+            <div class="p-4 p-md-5">
+                <form method="POST">
+                    {% csrf_token %}
+
+                    <div class="mb-4">
+                        <label class="form-label fw-bold">Nome Completo</label>
+                        <input type="text" name="cliente_nome" class="form-control" value="{{ agendamento.cliente_nome }}" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-bold">Telefone</label>
+                        <input type="text" name="telefone" class="form-control" value="{{ agendamento.telefone|default:'' }}">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-bold">Data e Hora Atual</label>
+                        <input type="datetime-local" name="data_hora" class="form-control" 
+                               value="{{ agendamento.data_hora|date:'Y-m-d\TH:i' }}" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-bold">Profissional</label>
+                        <select name="profissional" class="form-select" required>
+                            <option value="victoria" {% if agendamento.profissional == 'victoria' %}selected{% endif %}>Victoria</option>
+                            <option value="adriana" {% if agendamento.profissional == 'adriana' %}selected{% endif %}>Adriana</option>
+                            <option value="josiane" {% if agendamento.profissional == 'josiane' %}selected{% endif %}>Josiane</option>
+                            <option value="rosangela" {% if agendamento.profissional == 'rosangela' %}selected{% endif %}>Rosangela</option>
+                            <option value="camila" {% if agendamento.profissional == 'camila' %}selected{% endif %}>Camila</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-5">
+                        <label class="form-label fw-bold d-block mb-3">Serviços Selecionados</label>
+                        <div class="row g-3">
+                            {% for servico in servicos %}
+                            <div class="col-md-4">
+                                <div class="border p-3 rounded h-100">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="servicos" value="{{ servico.id }}" id="s{{ servico.id }}"
+                                        {% if servico in agendamento.servicos.all %}checked{% endif %}>
+                                        
+                                        <label class="form-check-label ms-2" for="s{{ servico.id }}">
+                                            <span class="d-block fw-bold">{{ servico.nome }}</span>
+                                            <span class="text-muted small">R$ {{ servico.preco }}</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 btn-lg text-white shadow-sm" style="background-color: #5d3712; border: none;">
+                        Salvar Alterações <i class="fas fa-check ms-2"></i>
+                    </button>
+
+                    <div class="text-center mt-4">
+                        <a href="{% url 'historico_agendamentos' %}" class="text-decoration-none text-muted">
+                            Cancelar e Voltar
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

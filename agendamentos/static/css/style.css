@@ -1,0 +1,155 @@
+:root {
+    --primary-color: #5d3712;
+    --primary-hover: #3e250c;
+    --sidebar-dark: #2c1810;
+    --bg-light: #fdf5e6;
+    --text-main: #3e2723;
+}
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-image: linear-gradient(#0a0a0ab3, #0a0a0ab3), url('../imagens/background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body .form-card {
+    background: rgba(255, 255, 255, 0.98); 
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    
+    width: 100%;
+    max-width: 1600px;
+    margin: 40px auto;
+    
+    overflow: hidden;
+    border: none;
+    backdrop-filter: blur(5px);
+}
+
+body .form-header {
+    background-color: var(--sidebar-dark);
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+body .service-option {
+    border: 2px solid #edf2f7;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+    background-color: #fff;
+}
+
+body .service-option:hover {
+    border-color: var(--primary-color);
+    background-color: #fff9f0;
+}
+
+body .form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+body .btn-primary, 
+body .btn-confirm {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    padding: 12px;
+    font-weight: 600;
+}
+
+body .btn-primary:hover, 
+body .btn-confirm:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+body .btn-novo-agendamento {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+    padding: 0.5rem 0.9rem;
+    min-width: auto;
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body .btn-novo-agendamento .btn-icon {
+    width: 18px;
+    height: auto;
+    display: inline-block;
+}
+
+body .btn-novo-agendamento:hover,
+body .btn-novo-agendamento:focus,
+body .btn-novo-agendamento:focus-visible {
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+}
+
+body .btn-novo-agendamento:active,
+body .btn-novo-agendamento.active,
+body .btn-novo-agendamento.show,
+body .btn-novo-agendamento.dropdown-toggle:active {
+    background-color: #0a58ca;
+    border-color: #0a58ca;
+    box-shadow: none;
+}
+
+body .text-primary, 
+body i.fas {
+    color: var(--primary-color);
+}
+
+body .sidebar {
+    background-color: var(--sidebar-dark);
+    min-height: 100vh;
+    color: #fff;
+}
+
+body .sidebar .nav-link {
+    color: #a09080;
+}
+
+body .sidebar .nav-link.active, 
+body .sidebar .nav-link:hover {
+    color: #fff;
+    background-color: rgba(255,255,255,0.05);
+    border-left: 4px solid var(--primary-color);
+}
+
+body .btn-outline-secondary:hover {
+    background-color: #fdf5e6;
+    color: #5d3712;
+    border-color: #5d3712;
+}
+
+body .form-card {
+    background: rgba(255, 255, 255, 0.98); 
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    
+    width: 95%;           
+    max-width: 1200px;   
+    
+    margin: 40px auto;    
+    overflow: hidden;
+    border: none;
+    backdrop-filter: blur(5px);
+}
