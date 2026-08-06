@@ -17,7 +17,7 @@
 
 ---
 
-## 📌 Sobre o Projeto
+## Sobre o Projeto
 
 **Leila Hair** é um sistema desenvolvido para modernizar a gestão de agendamentos do salão de beleza, oferecendo controle total de horários, serviços prestados e uma visão gerencial do faturamento, substituindo processos manuais por uma interface digital elegante e intuitiva.
 
@@ -32,7 +32,7 @@ O projeto adota uma **arquitetura monolítica** baseada no padrão MVT (Model-Vi
 ```
 cabeleireira-leila/
 │
-├── core/                          # 🔵 App principal — Lógica de Negócio
+├── core/                          # App principal — Lógica de Negócio
 │   ├── migrations/                # Versionamento do esquema do BD
 │   ├── templates/
 │   │   └── core/
@@ -44,7 +44,7 @@ cabeleireira-leila/
 │   ├── forms.py                   # Formulários e validações
 │   └── urls.py                    # Rotas do app
 │
-├── static/                        # 🟠 Arquivos estáticos
+├── static/                        # Arquivos estáticos
 │   ├── css/                        # Estilização customizada
 │   └── js/                         # Scripts e interações
 │
@@ -114,7 +114,7 @@ Cada agendamento possui um ciclo de vida (Pendente → Confirmado → Cancelado)
 
 ---
 
-## ▶️ Como Executar Localmente
+## Como Executar Localmente
 
 Siga os passos abaixo para rodar o projeto completo em ambiente de desenvolvimento.
 
